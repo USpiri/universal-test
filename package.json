@@ -1,19 +1,20 @@
 {
-  "name": "angular.io-example",
+  "name": "universal",
   "version": "0.0.0",
   "description": "Example project from an angular.io guide.",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build-dev": "ng build",
+    "vercel-build": "npm run build:ssr",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run angular.io-example:serve-ssr",
+    "dev:ssr": "ng run universal:serve-ssr",
     "serve:ssr": "node dist/server/main.js",
-    "build:ssr": "ng build && ng run angular.io-example:server",
-    "prerender": "ng run angular.io-example:prerender"
+    "build:ssr": "ng build && ng run universal:server",
+    "prerender": "ng run universal:prerender"
   },
   "private": true,
   "dependencies": {
