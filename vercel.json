@@ -1,11 +1,7 @@
 {
   "version": 2,
-  "public": true,
-  "name": "test-universal",
-  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "dist/browser/**"
-    }
-  }
+  "routes": [
+    { "src": "/(.*\\..+)$", "dest": "/dist/browser/$1" },
+    { "src": "/.*", "dest": "/dist/browser/index.html" }
+  ]
 }
