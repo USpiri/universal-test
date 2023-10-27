@@ -52,10 +52,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular.io-example:build:production"
+              "browserTarget": "universal:build:production"
             },
             "development": {
-              "browserTarget": "angular.io-example:build:development"
+              "browserTarget": "universal:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -63,7 +63,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular.io-example:build"
+            "browserTarget": "universal:build"
           }
         },
         "test": {
@@ -80,11 +80,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular.io-example:serve"
+            "devServerTarget": "universal:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular.io-example:serve:production"
+              "devServerTarget": "universal:serve:production"
             }
           }
         },
@@ -111,12 +111,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "angular.io-example:build:development",
-              "serverTarget": "angular.io-example:server:development"
+              "browserTarget": "universal:build:development",
+              "serverTarget": "universal:server:development"
             },
             "production": {
-              "browserTarget": "angular.io-example:build:production",
-              "serverTarget": "angular.io-example:server:production"
+              "browserTarget": "universal:build:production",
+              "serverTarget": "universal:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -128,12 +128,12 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular.io-example:build:production",
-              "serverTarget": "angular.io-example:server:production"
+              "browserTarget": "universal:build:production",
+              "serverTarget": "universal:server:production"
             },
             "development": {
-              "browserTarget": "angular.io-example:build:development",
-              "serverTarget": "angular.io-example:server:development"
+              "browserTarget": "universal:build:development",
+              "serverTarget": "universal:server:development"
             }
           },
           "defaultConfiguration": "production"
